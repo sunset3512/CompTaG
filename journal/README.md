@@ -1,15 +1,22 @@
 # CompTaG Research Journal for Kyla Andersen
 
-## [put date here] 
+## (05/29/2024) 
 
 Accomplishments since last update:
 
+Finished onboarding tasks for CompTag Reasearch group
+Finished onboarding tasks for Alice storytelling project
+
 * TODO 
+
+Start working on the Alice Storytelling pages, such as polishing them up and asking more questions regarding specifics.
 
 [if meeting ...]
 Things to do for next meeting:
 
 1. TODO
+Start reading the summer book
+Begin to figure out which area of research I am most interested in.
 
 ## Mid-May 2024
 
