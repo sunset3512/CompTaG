@@ -1,5 +1,21 @@
 # CompTaG Research Journal for Kyla Andersen
 
+## (05/30/2024)
+
+Accomplishments since last update:
+
+Had meeting with Braeden, Brittany, and Jordan
+Figured out how to push edits and made a good git commit
+
+* TODO
+Continue working on polishing up the Alice Storytelling project
+Read the summer book
+
+Things to do for next meeting:
+
+Find more questions regarding the porject
+Detail the work I completed
+
 ## (05/29/2024) 
 
 Accomplishments since last update:
