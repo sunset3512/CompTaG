@@ -1,5 +1,31 @@
 # CompTaG Research Journal for Kyla Andersen
 
+## (06/10/2024)
+
+Accomplishments since last update:
+
+Meet with Braeden and we figured out some of our main issues regarding the 
+Storytelling project. We have some ideas to bring up for the next meeting
+
+Started attending research meetings
+
+Prepped notes for leading Book Club and worked with Jack to focus on the main
+ideas that I will be presenting
+
+* TODO
+
+Continue working on the Storytelling Project.
+
+Start diving into the research I learn about in the meetings and figure out the 
+code that is being used there
+
+Help Jo for next weeks Book Club on (06/17/2024)
+
+Things for next meeting:
+
+Bring up concerns for the Storytelling project
+Try to have more questions for the research meetings so I can better understand
+
 ## (05/30/2024)
 
 Accomplishments since last update:
@@ -13,7 +39,7 @@ Read the summer book
 
 Things to do for next meeting:
 
-Find more questions regarding the porject
+Find more questions regarding the project
 Detail the work I completed
 
 ## (05/29/2024) 
