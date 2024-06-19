@@ -4,61 +4,56 @@
 
 Accomplishments since last update:
 
-Meet with Braeden and we figured out some of our main issues regarding the 
-Storytelling project. We have some ideas to bring up for the next meeting
+* Meet with Braeden and we figured out some of our main issues regarding the
+  Storytelling project. We have some ideas to bring up for the next meeting
+* Started attending research meetings
+* Prepped notes for leading Book Club and worked with Jack to focus on the main
+  ideas that I will be presenting
 
-Started attending research meetings
+Storytelling tasks:
 
-Prepped notes for leading Book Club and worked with Jack to focus on the main
-ideas that I will be presenting
+* Continue working on the Storytelling Project.
+* Bring up concerns for the Storytelling project
 
-* TODO
+CompTaG tasks: 
 
-Continue working on the Storytelling Project.
-
-Start diving into the research I learn about in the meetings and figure out the 
-code that is being used there
-
-Help Jo for next weeks Book Club on (06/17/2024)
-
-Things for next meeting:
-
-Bring up concerns for the Storytelling project
-Try to have more questions for the research meetings so I can better understand
+* Start diving into the research I learn about in the meetings and figure out
+  the code that is being used there
+* Help Jo for next weeks Book Club on (06/17/2024)
+* Try to have more questions for the research meetings so I can better understand
 
 ## (05/30/2024)
 
 Accomplishments since last update:
 
-Had meeting with Braeden, Brittany, and Jordan
-Figured out how to push edits and made a good git commit
+* Had meeting with Braeden, Brittany, and Jordan
+* Figured out how to push edits and made a good git commit
 
-* TODO
-Continue working on polishing up the Alice Storytelling project
-Read the summer book
+Storytelling tasks:
 
-Things to do for next meeting:
+* Continue working on polishing up the Alice Storytelling project
 
-Find more questions regarding the project
-Detail the work I completed
+CompTaG tasks:
+
+* Read the summer book
+* Find more questions regarding the project
+* Detail the work I completed
 
 ## (05/29/2024) 
 
 Accomplishments since last update:
 
-Finished onboarding tasks for CompTag Reasearch group
-Finished onboarding tasks for Alice storytelling project
+* Finished onboarding tasks for CompTag Reasearch group
+* Finished onboarding tasks for Alice storytelling project
 
-* TODO 
+Storytelling tasks:
 
-Start working on the Alice Storytelling pages, such as polishing them up and asking more questions regarding specifics.
+* Start working on the Alice Storytelling pages, such as polishing them up and asking more questions regarding specifics.
 
-[if meeting ...]
 Things to do for next meeting:
 
-1. TODO
-Start reading the summer book
-Begin to figure out which area of research I am most interested in.
+* Start reading the summer book
+* Begin to figure out which area of research I am most interested in.
 
 ## Mid-May 2024
 
