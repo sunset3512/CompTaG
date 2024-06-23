@@ -1,5 +1,29 @@
 # CompTaG Research Journal for Kyla Andersen
 
+## (06/22/2024)
+
+Accomplishments since last update:
+
+* Fixed Glossary items in the Storytelling repo
+* Addressed formatting and spelling items in LP004 to make it 
+  flow smoother
+
+Storytelling tasks:
+
+* Familiarize myself with the websites and what content is going
+  where
+* Continue editing and revising the LP's, starting with the 
+  most complete ones
+* Ask about the TODO comments that request outside information
+  I believe this occurs in LP007, but will confirm
+
+CompTaG tasks:
+
+* Met with Jack to discuss how I would begin randomly rotating
+  a bubble and then finding the original position
+* Started learning more about Linear Algebra (will try and take 
+  that class this coming semester)
+
 ## (06/10/2024)
 
 Accomplishments since last update:
