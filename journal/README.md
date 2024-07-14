@@ -1,5 +1,29 @@
 # CompTaG Research Journal for Kyla Andersen
 
+## (07/14/2024)
+
+Accomplishments since last update:
+* Working through some more Linear Algebra videos (I will share that link)
+* Continued editing LP004, and talked with Jo regarding future tasks.
+* Familiarized myself with the work being done in the wect and bubbles groups.
+
+Storytelling tasks:
+
+* Meet with Braeden to discuss changing directory names and worksheet names and
+  adding a Solutions directory where they are needed.
+* Bring up lingering concerns with LP004 in the next meeting. Such as
+  re-touching on the linking issues (there is one remaining), and figuring out how
+  we want to address the "Assessment" information. 
+* Want to start working on other LP's to bring them all to a similar place.
+
+CompTaG tasks:
+
+* Figure out how can aid the processes going on in the wect and bubbles groups.
+  (maybe I can help with the writing processes more since I seem to be lacking a
+bit of background work going into this)
+* Continue the book-club book and try to make connections to the other work we
+  are currently doing in the research groups.
+
 ## (06/22/2024)
 
 Accomplishments since last update:
