@@ -1,4 +1,32 @@
-# CompTaG Research Journal for Kyla Andersen
+ CompTaG Research Journal for Kyla Andersen
+
+## (08/20/2024)
+
+Accomplishments since last update:
+* Much of LP010 is completed, such as the content featured within it and the
+  accompanying workshets. Further editing will be made.
+* Met with Jack and discussed his code made in the #bubbles group. 
+* Created my own branch in the bubbles repo and began changing the code so it
+  would work with the new dinosaur data instead of the exsisting bubble data.
+
+Storytelling tasks:
+* Change the picture featured as the cover and add a picture displaying LP010's 
+  specific code from the Alice world.
+* Address any final formatting errors and concerns.
+* Switch over old standards for the new ones.
+* Address Think/Pair/Share concerns, this might be an issue in other LP's but I
+  will confirm.
+
+CompTaG tasks:
+* Meet with Jack and address some more questions that I have about the code.
+* Creating a database with all of the dinosaur data will be the next step and
+  ensuring the code can handle it. (So far three different test cases were
+  performed successfully which contained the three different file formats 
+  provided, .obj, .stl, and .glb). 
+* After correctly setting up my database containing the dinosaur bones aligned
+  through SVD, I will need to meet to discuss how "noise" should be added. That
+  is something I am not very familiar with though I will start researching it in
+  the meantime.
 
 ## (07/14/2024)
 
