@@ -24,62 +24,77 @@ Evolution}
 
 % Section 1: Introduction
 \section{Introduction}
-\begin{wrapfigure}{R}{0.3\textwidth}
+\begin{wrapfigure}{R}{0.35\textwidth}
 	\centering
-	\includegraphics[width=0.4\textwidth]{dino_bone.png}
-	\caption{A  3D scan of the left maxilla of an Edmontosaurus.}
+	\vspace{-12pt}
+	\includegraphics[width=0.35\textwidth]{newDinoBone.png}
+	\caption{A  3D scan of the left maxilla of an Edmontosaurus \citep{organ2024}.}
 	\label{fig:dino_maxilla}
 \end{wrapfigure}
+\vspace{-15pt}
 
 Topological methods have emerged as powerful tools in data analysis,
-particularly for complex, high-dimensional datasets such as those found in
-paleontology. The study of dinosaur evolution, traditionally reliant on
+particularly for complex, high-dimensional datasets such as those found across
+evolutionary biology. The study of dinosaur evolution, traditionally reliant on
 morphological analysis of fossilized bones, is an area ripe for innovation
-through these topological techniques. \autoref{fig:dino_maxilla} shows how a dinosaur fossil can
-be scanned and turned into a 3D image. Estimating morphological traits from 3D
-scans of bones can provide insights into the evolutionary relationships between
-different species and offer a clearer picture of their lineage and adaptations
-over time. 
+through these topological techniques. \autoref{fig:dino_maxilla} shows how a 
+dinosaur fossil can be scanned and turned into a 3D mesh. Estimating 
+morphological traits from 3D scans of bones can provide insights into the 
+evolutionary relationships between different species and offer a clearer picture 
+of their lineage and adaptations over time. This is often visualized using a
+phylogenetic tree, a diagram that illustrates the evolotionary paths and
+connections among species.
 
-Current approaches to this problem involve manually entering and comparing the 
+Traditional approaches to this problem involve manually entering and comparing the 
 morphological data, a process that is not only time-consuming but also prone to
-human error and subjectivity \citep{bates2009}. One computational approach, topological 
-data analysis (TDA), offers a mathematical framework that captures the intrinsic 
-geometric and topological properties of shapes, allowing for a more robust and 
-efficient method of trait estimation. Unlike traditional methods, TDA can handle 
-variations in shape, scale, and orientation, which enables more accurate
-comparisons of complex structures \citep{zomorodian2009}.
+human error and subjectivity \citep{bates2009}. Topological data analysis (TDA), 
+offers a set of mathematical tools that capture the intrinsic geometric and 
+topological properties of shapes, allowing for an efficient method of trait 
+estimation. Unlike traditional methods, TDA can handle variations in shape, 
+scale, and orientation, which enables more accurate comparisons of complex 
+structures \citep{zomorodian2009}. The Euler Characteristic Transform (ECT), 
+a specific tool in TDA, is particularly relevant for summarizing shape information 
+and distinguishing between different shapes \citep{cisewski2023}.
 
 In analyzing the traits of dinosaur bones, TDA would allow researchers to quantify
-differences and similarities by representing the shapes as high-dimensional data
-points. By treating these shapes as topological spaces, it becomes possible to
-construct a phylogenetic tree that reflects the true evolutionary history of a
-given species with greater precision and less manual intervention \citep{yang2012}.
-A phylogenetic tree is a diagram that displays the lines of evolutionary descent
-of different species. By using the traits found on certain dinosaur fossils, I
-will draw my own tree with good resolution by identifying key morphological 
-features that suggest specific evolutionary branches or relationships. This is 
-the area I wish to further study, particularly for its potential to enhance our 
-understanding of evolutionary relationships. 
+differences and similarities by representing the shapes as toplogical spaces. By 
+treating these shapes as topological spaces, it becomes possible to construct a 
+phylogenetic tree that reflects the true evolutionary history of a given species 
+with greater precision and less manual intervention \citep{yang2012}.
+Specifically, I look to use the ECT as a data descriptor to explore and analyze
+these topological spaces. The ECT can capture changes in the overall structure
+across different scales, providing a robust summary of shape information. By
+applying the ECT to traits found on dinosaur fossils, I will investigate which
+topological properties are more informative for accurately mapping evolutionary
+branches and relationships. 
+
+%By examining the traits found on certain dinosaur fossils, I will 
+%investigate which topological properties are most helpful for accurately mapping
+%evolutionary branches and relationships. I am particularly interested in this
+%area for its potential to reveal new insights into evolutionary patterns and
+%connections. 
 
 % Section 2: Background
 \section{Background}
 \begin{wrapfigure}{R}{0.3\textwidth}
 	\centering
+	\vspace{-12pt}
 	\includegraphics[width=0.3\textwidth]{arteryTree.png}
 	\caption{By using tools from TDA, \cite{bendich2016} uncovered previously
-unknown traits of the complex branching structure of arteries, as seen here}
+unknown traits of the complex branching structure of arteries, as seen here.}
 	\label{fig:artery_tree}
 \end{wrapfigure}
+\vspace{-12pt}
+
 Recent studies have demonstrated the power of TDA in fields such as neuroscience
 and anatomy. Notably, Bendich et al. \cite{bendich2016} utilized 
 TDA to analyze brain artery structures, revealing correlations between age, sex, 
 and the bending of arteries that were not present in previous studies. In
-\autoref{fig:artery_tree}, we see how an artery is constructed and then studied 
-using various techniques. TDA methods provide new insights into complex 
-data by capturing changes in the connectedness of structures and enabling the 
-analysis of high-dimensional characteristics, such as shape and form, often 
-overlooked by traditional metrics. 
+\autoref{fig:artery_tree}, we see the construction of an artery model which
+provides a basis for applying analytical techniques. TDA methods provide new 
+insights into complex data by capturing changes in the connectedness of 
+structures and enabling the analysis of high-dimensional characteristics, 
+such as shape and form, often overlooked by traditional metrics. 
 
 %\begin{wrapfigure}{R}{0.3\textwidth}
 %	\centering
@@ -150,34 +165,58 @@ such as trimesh and pygltflib. Next, I will adapt existing algorithms, such as
 point cloud registration and surface fitting to identify key morphological
 features of the bones. This will involve implementing and customizing these
 algorithms in Python, utilizing libraries like NumPy, SciPy, and PyTorch.
-Following this, I will develop new algorithms specifically tailored to
-paleontology, using techniques like principal component analysis (PCA) and
-singular value decomposition (SVD) to analyze and compare features across specimens.
-Certain machine learning models, such as convolutional neural networks (CNN) may also
-be utilized to enhance automated characterization. Experiments will validate the
-effectiveness of these methods by comparing them to known data, using metrics
-like shape similarity scores and classification accuracy to ensure robustness
-across different types of bones. The final stage will involve documenting the
-findings in an abstract or research paper, which will highlight the
-potential applications of these methods in paleontology and beyond.
+Following this, I will apply TDA techniques, focusing on the ECT. The ECT will
+allow me to track how the Euler characteristic changes as a filtration parameter
+varies. This will provided a detailed understanding of each bone's intrinsic
+properties. Additional techniques that will be used to analyze and compare
+features include principal component analysis (PCA) and singular value 
+decomposition (SVD). Experiments will validate the effectiveness of these methods 
+by comparing them to known data, using metrics like shape similarity scores and 
+classification accuracy to ensure robustness across different types of bones. 
+The final stage will involve documenting the findings in an abstract or research 
+paper, which will highlight the potential applications of these methods in 
+paleontology and beyond.
 
 % Section 4: Timeline
 \section{Timeline}
-An outline of the estimated timeline for this project is listed below.
+An outline of the estimated timeline for this project is given below.
 
-\begin{enumerate}
-	\item Clean, normalize, and align 3D scans using \texttt{trimesh} and
-	\texttt{pygltflib}: 2 weeks
-	\item Implement and adapt existing algorithms to identify key morphological
-	features of the bones: 3 weeks
-	\item Develop and customize new algorithms tailored to paleontology using
-	PCA, SVD and CNNs to enhance automated characterization: 5 weeks
-	\item Conduct experiments to validate methods, comparing them to known data:
-	3 weeks
-	\item Analyze the results, refine methods as needed, and compile findings
-	for documentation: 3 weeks
+%\begin{enumerate}
+%	\item Clean, normalize, and align 3D scans using trimesh and pygltflib: 3 weeks
+%	\item Implement and adapt existing algorithms to identify key morphological
+%	features of the bones: 4 weeks
+%	\item Develop and customize new algorithms tailored to paleontology using
+%	the ETC, PCA, and the SVD to enhance automated characterization: 7 weeks
+%	\item Conduct experiments to validate methods, comparing them to known data:
+%	5 weeks
+%	\item Analyze the results, refine methods as needed, and compile findings
+%	for documentation: 6 weeks
 %	\item Assemble my finding for an abstract or research paper: 1 week
-\end{enumerate}
+%\end{enumerate}
+
+\begin{table}[h!]
+\centering
+%\normalsize
+%\resizebox{\textwidth}{!}{
+\setlength{\tabcolsep}{10pt}
+\renewcommand{\arraystretch}{1}
+\begin{tabular}{|p{12cm}|p{2.5cm}|}
+\hline
+\textbf{Task} & \textbf{Duration} \\
+\hline
+Clean, normalize, and align 3D scans using trimesh and pygltflib & 3 weeks \\
+Implement and adapt new exsisting algorithms to identify key morphological
+features & 4 weeks \\
+Develop and customize new algorithms tailored to paleontology using the ECT,
+PCA, and the SVD to enhance automated characterization & 7 weeks \\
+Conduct experiments to validate methods, comparing them to known data & 5 weeks \\
+Analyze the results, refine methods as needed, and compile findings for
+documentation & 6 weeks \\
+Assemble my findings for an abstract or research paper & 2 weeks \\
+\hline
+\end{tabular}
+%}
+\end{table}
 
 % Section 5: Collaboration with Faculty Sponsor
 \section{Collaboration with Faculty Sponsor}
