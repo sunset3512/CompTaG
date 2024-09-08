@@ -35,40 +35,42 @@ Evolution}
 
 Topological methods have emerged as powerful tools in data analysis,
 particularly for complex, high-dimensional datasets such as those found across
-evolutionary biology. The study of dinosaur evolution, traditionally reliant on
+evolutionary biology. The study of phylogenetics, traditionally reliant on
 morphological analysis of fossilized bones, is an area ripe for innovation
-through these topological techniques. \autoref{fig:dino_maxilla} shows how a 
+using bones from extinct species. \autoref{fig:dino_maxilla} shows how a 
 dinosaur fossil can be scanned and turned into a 3D mesh. Estimating 
 morphological traits from 3D scans of bones can provide insights into the 
-evolutionary relationships between different species and offer a clearer picture 
-of their lineage and adaptations over time. This is often visualized using a
-phylogenetic tree, a diagram that illustrates the evolotionary paths and
-connections among species.
+evolutionary relationships among different species and offer a clearer picture 
+of their lineage and adaptations over time, which is essential for understanding
+evolutoin and biodiversity. This is often visualized using a phylogenetic tree, 
+a diagram that illustrates the evolotionary paths and connections among species.
+These diagrams are universal to all fields of biology, from virology and cancer
+biology, to genomics and ecology.
 
 Traditional approaches to this problem involve manually entering and comparing the 
 morphological data, a process that is not only time-consuming but also prone to
-human error and subjectivity \citep{bates2009}. Topological data analysis (TDA), 
-offers a set of mathematical tools that capture the intrinsic geometric and 
-topological properties of shapes, allowing for an efficient method of trait 
-estimation. Unlike traditional methods, TDA can handle variations in shape, 
+human error and bias \citep{bates2009,asher2022}. Topological data analysis (TDA), 
+offers a solution through a set  of mathematical tools that capture the intrinsic 
+geometric and topological properties of shapes, allowing for an efficient method 
+of trait estimation. Unlike traditional methods, TDA can handle variations in shape, 
 scale, and orientation, which enables more accurate comparisons of complex 
 structures \citep{zomorodian2009}. The Euler Characteristic Transform (ECT), 
 a specific tool in TDA, is particularly relevant for summarizing shape information 
 and distinguishing between different shapes \citep{cisewski2023}.
 
-In analyzing the traits of dinosaur bones, TDA would allow researchers to quantify
+In analyzing the traits of fossils, TDA would allow researchers to quantify
 differences and similarities by representing the shapes as toplogical spaces. By 
-treating these shapes as topological spaces, it becomes possible to construct a 
-phylogenetic tree that reflects the true evolutionary history of a given species 
+treating these shapes as topological spaces, it would become possible to construct a 
+phylogenetic tree that reflects the evolutionary history of a given species 
 with greater precision and less manual intervention \citep{yang2012}.
 Specifically, I look to use the ECT as a data descriptor to explore and analyze
 these topological spaces. The ECT can capture changes in the overall structure
 across different scales, providing a robust summary of shape information. By
-applying the ECT to traits found on dinosaur fossils, I will investigate which
+applying the ECT to traits found on fossils, I will investigate which
 topological properties are more informative for accurately mapping evolutionary
 branches and relationships. 
 
-%By examining the traits found on certain dinosaur fossils, I will 
+%By examining the traits found on fossils, I will 
 %investigate which topological properties are most helpful for accurately mapping
 %evolutionary branches and relationships. I am particularly interested in this
 %area for its potential to reveal new insights into evolutionary patterns and
@@ -87,12 +89,12 @@ unknown traits of the complex branching structure of arteries, as seen here.}
 \vspace{-12pt}
 
 Recent studies have demonstrated the power of TDA in fields such as neuroscience
-and anatomy. Notably, Bendich et al. \cite{bendich2016} utilized 
+and anatomy. Notably, Bendich et al. \cite{bendich2016} used
 TDA to analyze brain artery structures, revealing correlations between age, sex, 
 and the bending of arteries that were not present in previous studies. In
 \autoref{fig:artery_tree}, we see the construction of an artery model which
 provides a basis for applying analytical techniques. TDA methods provide new 
-insights into complex data by capturing changes in the connectedness of 
+insights into complex data by capturing changes within interconnected 
 structures and enabling the analysis of high-dimensional characteristics, 
 such as shape and form, often overlooked by traditional metrics. 
 
@@ -105,14 +107,13 @@ such as shape and form, often overlooked by traditional metrics.
 %\end{wrapfigure}
 
 With advancements in 3D imaging and data acquisition technologies, applying TDA 
-to 3D data feature simplification has gained significant
-traction in recent years. A study produced by Ou Li \citep{li2021} introduced a 
-method that leverages TDA for segmenting and simplifying 3D point cloud data, a
-representation commonly only obtained through low-cost 3D sensors. 
-The study demonstrated that TDA can effectively partition complex, disorganized 
-3D data into subsets with consistent characteristics, using various techniques 
-that simplify the data structure while retaining critical geometric information
-\citep{li2021}.
+to 3D data has gained significant traction in recent years. A study produced by 
+Ou Li \citep{li2021} introduced a method that leverages TDA for segmenting and 
+simplifying 3D point cloud data, a representation commonly only obtained through 
+low-cost 3D sensors. The study demonstrated that TDA can effectively partition 
+complex, disorganized 3D data into subsets with consistent characteristics, 
+using various techniques that simplify the data structure while retaining 
+critical geometric information \citep{li2021}.
 
 Dornbusch et al. \cite{dornbusch2007}, developed a method that utilizes 3D point 
 clouds to extract and parameterize morphological traits of plant organs, which 
@@ -131,9 +132,12 @@ While computational methods for analyzing 3D scans have advanced significantly
 in fields like medical imaging and industrial design, paleontology has not yet
 fully leveraged these tools. Current research in paleontology has a noticeable lack of
 specialized algorithms and methods tailored for interpreting the complex,
-irregular shapes of fossilized remains, such as dinosaur bones. The gap lies in
+irregular shapes of fossilized remains, such as dinosaur bones, though scans are
+routinely used when describing specimens. The gap lies in
 the adaptation and development of these advanced computational methods to suit
-the specific challenges of paleontological data.
+the specific challenges of paleontological data. The groundwork for inferring
+trees from high dimensional continuous data is well established and has been
+shown to generate well supported phylogenies \cite{gonzalez2008}.
 
 Building on existing research in 3D scan analysis and computational methods, my
 goal is to advance these techniques more specifically for the field of
@@ -143,36 +147,34 @@ and characterizing dinosaur bones from 3D scans. This work seeks to fill the
 current gap in applying these advanced techniques to paleontological data, 
 ultimately improving the accuracy of evolutionary trees and our understanding of 
 prehistoric life. I will ensure the accuracy of my phylogenetic tree through
-comparissons of known fossil relatives that have been hand caluclated and use
-those results to validate the methods I choose.
+comparissons of established trees.
 
 I look forward to expanding my research experience by taking on the challenge of
 an independent project for the first time. With a solid background in
 coding with Python, Java, and C++, I have the skills that will be instrumental 
 in developing and implementing the new algorithms necessary for this research. 
 This project will allow me to deepen my knowledge of computational topology and 
-enhance my skills in algorithm development and data analysis. I am eager to 
-contribute to the field of paleontology with a tool that not only advances our 
-capability to analyze fossil data but also has the potential to influence broader 
-applications in scientific research.
+enhance my skills in algorithm development and data analysis. 
 
 % Section 3: Methods
 \section{Methods}
 To begin this project, I will preprocess 3D scans of dinosaur bones to clean and
-normalize the data. Specifically, I will ensure consistency in scale, orientation, and resolution
-by removing noise, filling holes, and aligning scans using tools from Python,
-such as trimesh and pygltflib. Next, I will adapt existing algorithms, such as
-point cloud registration and surface fitting to identify key morphological
-features of the bones. This will involve implementing and customizing these
-algorithms in Python, utilizing libraries like NumPy, SciPy, and PyTorch.
-Following this, I will apply TDA techniques, focusing on the ECT. The ECT will
+normalize the data. Specifically, I will ensure consistency in scale, orientation, 
+and resolution by removing noise, filling holes, and aligning scans.  Next, I 
+will adapt existing algorithms, such as point cloud registration to identify key 
+morphological features of the bones. This will involve implementing these
+algorithms in Python, utilizing libraries like NumPy, SciPy. Following this, 
+I will apply TDA techniques, focusing on the ECT. The ECT will
 allow me to track how the Euler characteristic changes as a filtration parameter
 varies. This will provided a detailed understanding of each bone's intrinsic
 properties. Additional techniques that will be used to analyze and compare
 features include principal component analysis (PCA) and singular value 
 decomposition (SVD). Experiments will validate the effectiveness of these methods 
-by comparing them to known data, using metrics like shape similarity scores and 
-classification accuracy to ensure robustness across different types of bones. 
+by comparing them to known data, using metrics like shape similarity scores to 
+ensure robustness across different types of bones.
+The data collected will then be used to generate a Bayesian Brownian motion
+phylogenetic model in the scripting language RevBayes, which will produce
+posterior distributions of phylogenies give the data and the model. 
 The final stage will involve documenting the findings in an abstract or research 
 paper, which will highlight the potential applications of these methods in 
 paleontology and beyond.
@@ -224,12 +226,12 @@ My primary faculty sponsor for this project is Dr. Brittany Fasy, whose ongoing
 research in 3D shape analysis aligns with the methodological aspects of this
 project. I plan to meet with Dr. Fasy regularly as her expertise in computational 
 geometry and 3D data analysis will be invaluable in guiding the development and 
-refinement of algorithms for this project. Additionally, I will be collaborating 
-with Dr. Christopher Organ, whose work in evolutionary biology and paleontology 
+refinement of algorithms for this project. Additionally, I will be advised by
+Dr. Chris Organ, whose work in evolutionary biology and paleontology 
 will provide crucial insights into the biological relevance of the morphological 
 features I am going to analyze. I am eager to engage in this research project, 
 which not only supports the work of my mentors but also aims to make a meaningful 
-contribution to the fields of computational topology and paleontology.
+contribution to the fields of computational topology and evolutionary biology.
 
 \newpage
 
